@@ -2,15 +2,10 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public Rigidbody rb;
 
-    // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        
+        rb.AddForce(0f, 0f, 2000f * Time.deltaTime);
     }
 }
