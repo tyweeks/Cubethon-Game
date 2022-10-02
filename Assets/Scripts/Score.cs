@@ -7,9 +7,15 @@ public class Score : MonoBehaviour
 
     public Text scoreText;
 
+    [HideInInspector]
+    public bool GameHasEnded = false;
+
     // Update is called once per frame
     void Update()
     {
-        scoreText.text = player.position.z.ToString("0");
+        if (!GameHasEnded)
+        {
+            scoreText.text = player.position.z.ToString("0");
+        }
     }
 }
