@@ -45,5 +45,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GameHasEnded: 0
-  RestartDelay: 4
+  RestartDelay: 3
   completeLevelUI: {fileID: 0}
